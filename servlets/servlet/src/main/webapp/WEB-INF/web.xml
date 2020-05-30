@@ -9,15 +9,4 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
-    <servlet>
-        <servlet-name>Greeting</servlet-name>
-        <servlet-class>GreetingServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Greeting</servlet-name>
-        <url-pattern>/Greet</url-pattern>
-    </servlet-mapping>
-
-
 </web-app>
