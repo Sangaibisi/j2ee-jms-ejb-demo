@@ -16,7 +16,6 @@
     <module>primary-source</module>
     <module>servlets</module>
     <module>ejbs</module>
-    <module>ear</module>
   </modules>
 
   <distributionManagement>
