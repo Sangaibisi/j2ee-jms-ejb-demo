@@ -14,6 +14,14 @@ public class GreetingServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("<h1>Hello, world!</h1>");
+        Book b1 = new Book();
+        b1.setAuthor("Emrullah");
+        b1.setName("JMS Example");
+
+        try {
+            JMSQueueUtility.sendMessageToQueue(b1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
