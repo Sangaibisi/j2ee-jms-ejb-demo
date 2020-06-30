@@ -1,13 +1,4 @@
-
-import java.io.ObjectOutputStream;
-
-import java.net.HttpURLConnection;
-import java.net.URL;
-
-import java.sql.Timestamp;
-
 import javax.ejb.MessageDriven;
-
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.ObjectMessage;
@@ -23,6 +14,7 @@ public class DefaultEJBBean implements MessageListener {
             ObjectMessage objectMessage = null;
             try {
                 objectMessage = (ObjectMessage) message;
+
                 System.out.println(objectMessage.getStringProperty("name"));
                 System.out.println("Hello babe");
 

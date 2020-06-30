@@ -34,7 +34,7 @@ public class JMSQueueUtility {
             queueSession.close();
         } catch (NamingException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             connection.close();
         }
     }
